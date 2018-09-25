@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+
+  body{
+    background-color: #161616;}
+
+#bodydiv{
+ position: absolute;
+ top: 0px;
+  transform: skewX(-20deg);
+  background-color: black;
+  height: 3000px;
+  float: left;
+}
+
+  #grid
+  {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 50px;
+    grid-row-gap: 100px;
+    margin: 100px 100px;
+  }
+
+
+#athin{
+  height:80px;
+  width: 2.5px;
+  background: linear-gradient(#DBBA31, #EDE09F, #DBBA31);
+  transform: skewX(37deg);
+  position: relative;
+  left:27px;
+  float: left;
+}
+#abar{
+  height:2.5px;
+  width: 37.5px;
+  background: #EDE09F;
+  position: relative;
+  left:-10px;
+  top: 40px;
+  float: left;
+}
+
+.thick{
+  height:80px;
+  width: 40px;
+  background: linear-gradient(#DBBA31, #EDE09F, #DBBA31);
+  float:left;
+position: relative;
+
+}
+
+.thickleft{
+  height:80px;
+  width: 40px;
+  background: linear-gradient(#DBBA31, #EDE09F, #DBBA31);
+  transform: skewX(37deg);
+  float:left;
+  position: relative;
+
+}
+
+.bar{
+  height:3px;
+  width: 42.5px;
+  background: linear-gradient(#DBBA31, #EDE09F, #DBBA31);
+  position: relative;
+
+
+}
+
+.etop{
+  left:40px;
+}
+.emid{
+  left:37.5px;
+  top: 35px;
+}
+.ebottom{
+  left:40px;
+  top: 71px;
+
+}
+
+.rightthin{
+  height:80px;
+  width: 3px;
+  background: linear-gradient(#DBBA31, #EDE09F, #DBBA31);
+
+  position: relative;
+  float: left;
+}
+
+.leftthin{
+  height:80px;
+  width: 3px;
+  background: linear-gradient(#DBBA31, #EDE09F, #DBBA31);
+  transform: skewX(37deg);
+  position: relative;
+  float: left;
+}
+
+.halfo {
+	width: 80px;
+	height: 40px;
+	background: black;
+	border-color: #DBBA31;
+	border-style: solid;
+	border-width: 2.5px 2.5px 50px 2.5px;
+  transform: rotate(90deg);
+	border-radius: 50%;
+	position: relative;
+}
+.halfb {
+	width: 40px;
+	height: 20px;
+	background: transparent;
+	border-image: linear-gradient(#DBBA31, #EDE09F, #DBBA31);
+	border-style: solid;
+	border-width: 2.5px 2.5px 25px 2.5px;
+  transform: rotate(90deg);
+	border-radius: 50%;
+	position: relative;
+}
+
+.circleone{
+  width: 35px;
+	height: 50px;
+  background: black;
+  border-radius: 50%;
+  float: left;
+  transform: rotate(18deg);
+  position: relative;
+}
+.circletwo{
+  width: 55px;
+	height: 35px;
+  background: #DBBA31;
+  border-radius: 50%;
+  transform: rotate(-10deg);
+  float: left;
+  position: relative;
+}
+.circlethree{
+  width: 40px;
+	height: 50px;
+  background: black;
+  border-radius: 50%;
+  float: left;
+  transform: rotate(90deg);
+  position: relative;
+}
+.circlecut{
+  width: 40px;
+	height: 50px;
+  background: black;
+  border-radius: 50%;
+  float: left;
+  transform: rotate(90deg);
+  position: relative;
+  top:-105px;
+  left:20px;
+}
+
+.curve{
+  width: 70px;
+	height: 30px;
+  background: linear-gradient(#DBBA31, #EDE09F, #DBBA31);
+  border-radius: 50%;
+  float: left;
+
+  position: relative;
+}
+
+
+
+  </style>
+</head>
+
+
+<body>
+  <div id="bodydiv">
+  <div id="grid">
+
+  <div id="a">
+  <div class="thick"></div>
+  <div id="athin"></div>
+  <div id="abar"></div>
+</div>
+
+<div id="b" style="position: relative; top:-10px;">
+<div class="halfo" style="top: -16px; left:10px; transform:scale(0.5) rotate(-80deg);">
+  <div class="circleone" style="top: 10px; left:1px;">  </div>
+    <div class="circlethree" style="top: 15px; left:-1px;">  </div>
+    <div class="circletwo" style="top: -10px; left:25px;">
+  </div>
+</div>
+<div class="halfo" style="top: -71px; left:10px; transform:scale(0.5) rotate(100deg);">
+  <div class="circleone" style="top: 10px; left:1px;">  </div>
+    <div class="circlethree" style="top: 15px; left:-1px;">  </div>
+    <div class="circletwo" style="top: -10px; left:25px;">
+  </div>
+</div>
+<div class="thick" style="top: -175px; left:-10px; z-index: -1; width: 55px; height:78px" ></div>
+</div>
+
+<div id="c" style="position:relative; top:-7px;">
+<div class="halfo">
+  <div class="circleone" style="top: 10px; left:1px;">  </div>
+    <div class="circlethree" style="top: 15px; left:-1px;">  </div>
+    <div class="circletwo" style="top: -10px; left:25px;"></div>
+      <div class="circlecut" ></div>
+</div>
+</div>
+
+<div id="d" style="position:relative; top:-7px;">
+<div class="halfo">
+  <div class="circleone" style="top: 10px; left:1px;">  </div>
+    <div class="circlethree" style="top: 15px; left:-1px;">  </div>
+    <div class="circletwo" style="top: -10px; left:25px;"></div>
+</div>
+<div class="thick" style="top: -89px; left:-10px; z-index: -1; width: 55px; height:85px" ></div>
+</div>
+
+<div id="e">
+  <div class="thick"></div>
+  <div class="etop bar"></div>
+  <div class="emid bar"></div>
+  <div class="ebottom bar"></div>
+</div>
+
+<div id="f">
+  <div class="thick"></div>
+  <div class="etop bar"></div>
+  <div class="emid bar"></div>
+</div>
+
+<div id="g" style="position:relative; top:-7px;">
+<div class="halfo">
+  <div class="circleone" style="top: 10px; left:1px;">  </div>
+    <div class="circlethree" style="top: 15px; left:-1px;">  </div>
+    <div class="circletwo" style="top: -10px; left:25px;"></div>
+      <div class="circlecut" ></div>
+</div>
+<div class="bar" style="top:-24px; left:49.6px; width:30px;"></div>
+</div>
+
+<div id="h">
+<div class="thick"></div>
+<div class="bar" style="left: 37.5px; top: 35px;"></div>
+<div class="rightthin" style="left: 37.5px; top:-3px;"></div>
+</div>
+
+<div class="thick"></div>
+
+<div id="j">
+<div class="thick"></div>
+<div class="curve" style="z-index: -1; left:-80px; top: 50px;"></div>
+<div class="curve" style="background:black; z-index: -1; left:-80px; top: 17px;"></div>
+<div class="curve" style="background: black; border-radius:0px; left:-155px; top: 30px; height:10px; width: 10px;"></div>
+</div>
+
+
+<div id="l">
+  <div class="thick"></div>
+  <div class="ebottom bar" style="top:77px;"></div>
+
+</div>
+
+<div id="m" style="position:relative; left:-40px;">
+<div class="thick"></div>
+<div class="leftthin" style="left: 27.5px;"></div>
+<div class="rightthin" style="left: 25px;"></div>
+<div class="thickleft" style="left: 52.5px;"></div>
+<div class="bar" style="width: 29px; transform: skewX:(0deg); left: 70px; top: 77px;"></div>
+</div>
+
+<div id="n">
+<div class="thick"></div>
+<div class="leftthin" style="left: 27.5px;"></div>
+<div class="rightthin" style="left: 55px;"></div>
+</div>
+
+<div id="o" style="position:relative; top:-7px;">
+<div class="halfo">
+  <div class="circleone" style="top: 10px; left:1px;">  </div>
+    <div class="circlethree" style="top: 15px; left:-1px;">  </div>
+    <div class="circletwo" style="top: -10px; left:25px;">
+  </div>
+</div>
+</div>
+
+<div id="p">
+<div class="halfo" style="top: -23px; left:-5px; transform:scale(0.5) rotate(-80deg);">
+  <div class="circleone" style="top: 10px; left:1px;">  </div>
+    <div class="circlethree" style="top: 15px; left:-1px;">  </div>
+    <div class="circletwo" style="top: -10px; left:25px;">
+  </div>
+</div>
+<div class="thick" style="top: -91px; left:-10px; z-index: -1; height:78px" ></div>
+</div>
+
+<div id="q" style="position:relative; top:-7px;">
+<div class="halfo">
+  <div class="circleone" style="top: 10px; left:1px;">  </div>
+    <div class="circlethree" style="top: 15px; left:-1px;">  </div>
+    <div class="circletwo" style="top: -10px; left:25px;">
+  </div>
+</div>
+<div class="leftthin" style="left: 82px; height:20px; top:-20px;" ></div>
+</div>
+
+<div id="r">
+<div class="halfo" style="top: -23px; left:-5px; transform:scale(0.5) rotate(-80deg);">
+  <div class="circleone" style="top: 10px; left:1px;">  </div>
+    <div class="circlethree" style="top: 15px; left:-1px;">  </div>
+    <div class="circletwo" style="top: -10px; left:25px;">
+  </div>
+</div>
+<div class="thick" style="top: -91px; left:-10px; z-index: -1; height:78px" ></div>
+<div class="leftthin" style="left: -1px; height:40px; top:-53px;" ></div>
+</div>
+
+<div id="t">
+<div class="thick" ></div>
+    <div class="etop bar" style="width:100px; left:-28px;"></div>
+</div>
+
+<div id="u">
+<div class="thick"></div>
+<div class="curve" style="z-index: -1; left:-80px; top: 50px;"></div>
+<div class="curve" style="background:black; z-index: -1; left:-80px; top: 17px;"></div>
+<div class="curve" style="background: black; border-radius:0px; left:-155px; top: 30px; height:10px; width: 10px;"></div>
+<div class="rightthin" style="left: -158px; top: -30px; height:70px; background: linear-gradient(#DBBA31, #EDE09F);"></div>
+</div>
+
+<div id="v">
+<div class="leftthin"></div>
+<div class="thick" style="left: 27px;"></div>
+</div>
+
+<div id="w" style="position:relative; left:-40px;">
+<div class="thickleft"></div>
+
+<div class="rightthin" style="left: 27px;"></div>
+<div class="leftthin" style="left: 25px;"></div>
+<div class="thick" style="left: 52.5px;"></div>
+<div class="bar" style="width: 29px; transform: skewX:(-1deg); left: 40px; top: 0px;"></div>
+
+</div>
+
+<div id="x">
+<div class="leftthin"></div>
+<div class="thick"></div>
+<div class="leftthin"></div>
+</div>
+
+
+<div id="y">
+<div class="leftthin"></div>
+<div class="thick" ></div>
+</div>
+
+<div id="z">
+<div class="thick" ></div>
+  <div class="etop bar" style="left:-40px;"></div>
+    <div class="ebottom bar" style="top:74px;"></div>
+</div>
+
+
+
+
+
+
+
+</div>
+
+</div>
+
+</body>
+
+</html>
